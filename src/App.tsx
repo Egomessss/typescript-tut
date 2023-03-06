@@ -1,5 +1,8 @@
+import { ChangeEvent } from "react"
+import { Button } from "./components/Button"
 import { Greet } from "./components/Greet"
 import { Heading } from "./components/Heading"
+import { Input } from "./components/Input"
 import { Oscar } from "./components/Oscar"
 import { Person } from "./components/Person"
 import { PersonList } from "./components/PersonList"
@@ -33,12 +36,14 @@ function App() {
       <Person name={personName} />
       <PersonList names={nameList} />
       <Status status="sucess"/> */}
-      <Heading children={"hello"} />
+      {/* <Heading children={"hello"} />
       <Oscar>
         <Heading>Oscar goes to Leonardo</Heading>
       </Oscar>
       <Greet name={"Edmilson"}
-        isLoggedIn={false} />
+        isLoggedIn={false} /> */}
+        {/* <Button handleClick={(e, id)=> console.log("Button clicked", e, id) }/> */}
+        <Input value="" handleChange={(e) => console.log(e) }/>
     </div>
   )
 }
